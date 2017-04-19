@@ -1,0 +1,12 @@
+<launch>
+    <node pkg="gmapping" name="slam_gmapping" type="slam_gmapping" args="scan:=/bookle/laser/scan" output="screen">
+    	<param name="base_frame" value="base_footprint"/>
+    	<param name="odom_frame" value="odom"/>
+    	<param name="xmin" value="-1" />
+    	<param name="xmax" value="1" />
+    	<param name="ymin" value="-1" />
+    	<param name="ymax" value="1" />
+    	<param name="maxRange" value="6.0" />
+    	<param name="map_update_interval" value="2" />
+    </node>
+</launch>
